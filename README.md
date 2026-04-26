@@ -169,12 +169,54 @@ npx vitest
 
 ## 🗺️ Roadmap
 
+- [x] **Soroban Smart Contract** - Rust-based contract for tip escrow and batch operations
 - [ ] Secure backend relayer for Fee Bump signing
 - [ ] Multi-asset tip support (USDC, custom tokens)
-- [ ] Soroban smart contract escrow for conditional tips
+- [ ] Smart contract integration for conditional tips
 - [ ] Tip leaderboard & social profiles
 - [ ] Mobile app (React Native)
 - [ ] Mainnet deployment
+
+## 🦀 Smart Contract
+
+The project includes a Soroban smart contract written in Rust that provides:
+
+- **Tip Escrow**: Secure tip storage until claimed
+- **Batch Operations**: Claim multiple tips in one transaction
+- **Message Support**: Attach messages to tips
+- **Statistics Tracking**: Global tip metrics
+- **Admin Controls**: Emergency functions
+
+### Contract Features
+
+```rust
+// Send a tip with message
+send_tip(from, to, token_address, amount, message) -> tip_id
+
+// Claim individual tip
+claim_tip(tip_id, token_address)
+
+// Batch claim multiple tips
+batch_claim_tips(tip_ids, token_address)
+
+// Query functions
+get_tip(tip_id) -> Tip
+get_user_tips(user) -> Vec<tip_id>
+get_stats() -> TipStats
+```
+
+### Quick Deploy
+
+```bash
+cd contracts
+# Windows
+.\deploy.ps1
+
+# Linux/macOS  
+./deploy.sh
+```
+
+See [SETUP.md](./SETUP.md) for detailed deployment instructions.
 
 ---
 
