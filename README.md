@@ -1,62 +1,208 @@
-# Stellar TipJar dApp
+<div align="center">
 
-A premium, production-ready decentralized application built on the Stellar Testnet for sending instant, gasless micro-payments (tips). The UI is inspired by modern Web3 fintech products like Stripe and Coinbase, featuring a dark neon-glow theme, glassmorphism, and a responsive layout.
+<img src="https://img.shields.io/badge/Stellar-Testnet-7B61FF?style=for-the-badge&logo=stellar&logoColor=white" />
+<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/Freighter-Wallet-0096C7?style=for-the-badge" />
 
-## 🚀 Live Demo & Repository
-- **Live Demo URL**: [https://stellar-tipjar.vercel.app](https://stellar-tipjar.vercel.app) *(Placeholder - Update with your Vercel URL)*
-- **GitHub Repository**: [https://github.com/Aniket24-create/StarSend-X](https://github.com/Aniket24-create/StarSend-X)
+<br /><br />
 
-## 📱 Screenshots
+<h1>🪙 Stellar TipJar</h1>
 
-### Mobile Responsive View
-*(Record a short screen video on mobile or use Chrome DevTools device emulation and take screenshot)*
-![Mobile View](./src/assets/dashboard_screenshot.png)
+<p><strong>A premium, gasless micro-tipping dApp built on the Stellar Testnet.</strong><br/>
+Send XLM tips to any Stellar address or federation alias — instantly, with zero transaction fees for senders.</p>
 
-### Dashboard & Send Tip
-![Dashboard UI](./src/assets/dashboard_screenshot.png)
+<br />
 
-## ⚙️ CI/CD Pipeline
-We use GitHub Actions for automated testing and builds.
-![CI/CD Status](https://img.shields.io/github/actions/workflow/status/Aniket24-create/StarSend-X/main.yml?branch=main)
+[🚀 Live Demo](#) &nbsp;•&nbsp; [📖 Docs](#architecture) &nbsp;•&nbsp; [🐛 Report Bug](https://github.com/Aniket24-create/Stellar_TipJar/issues) &nbsp;•&nbsp; [✨ Request Feature](https://github.com/Aniket24-create/Stellar_TipJar/issues)
 
-## 🔗 Stellar Blockchain Details
-- **Transaction Hash (Example Tip)**: `[Insert a successful transaction hash here]`
-- **Contract Addresses (Soroban)**: *N/A - This dApp currently uses native Stellar operations and Fee Bump transactions.*
-- **Custom Token / Pool Address**: *N/A - This dApp currently utilizes native XLM for tips.*
+</div>
+
+---
 
 ## ✨ Features
-- **Freighter Wallet Integration**: Secure, non-custodial login.
-- **Gasless Tipping**: Transaction fees are sponsored via the Stellar Fee Bump mechanism using an environment-provided sponsor key.
-- **Alias Resolution**: Send tips easily using mock federation aliases like `@alice` or `@bob`.
-- **Quick Tips**: Predefined buttons (1 XLM, 5 XLM, 10 XLM) for fast sending.
-- **Receive QR Codes**: Instantly generate QR codes for your Stellar wallet address.
 
-## 🛠 Technical Stack
-- **Frontend**: React.js (Vite), Tailwind CSS, Framer Motion
-- **Blockchain**: Stellar SDK, Freighter API v6
-- **Network**: Stellar Testnet
+| Feature | Description |
+|---|---|
+| 💸 **Gasless Tipping** | Transaction fees sponsored via Stellar Fee Bump — senders pay $0 |
+| 🔑 **Freighter Wallet** | Seamless, non-custodial sign-in with the Freighter browser extension |
+| 🌐 **Federation Support** | Resolve human-readable addresses like `alice*stellar.org` to public keys |
+| 📊 **Real-time Dashboard** | Live XLM balance & streaming payment history via Horizon server-sent events |
+| 📷 **QR Code Receive** | Generate a scannable QR for your Stellar address in one click |
+| 🌗 **Dark / Light Mode** | System-aware theme toggle with smooth transitions |
+| 📱 **Fully Responsive** | Optimized for mobile, tablet, and desktop viewports |
+| 🎨 **Premium UI** | Glassmorphism design with neon accents, micro-animations, and Framer Motion |
+| 💬 **Feedback System** | Built-in feedback modal for community insights |
+| ✅ **Test Coverage** | Unit tests via Vitest + React Testing Library |
 
-## 📥 Setup Instructions
+---
 
-1. **Clone the repository**
-2. **Install dependencies**: `npm install`
-3. **Configure Environment Variables**:
-   Create a `.env` file in the root directory:
-   ```env
-   # Used to sign Fee Bump transactions for gasless tips (Testnet only)
-   VITE_SPONSOR_SECRET_KEY=SBFFAMYOFSV6TC2BTPAMECFBPB7SH3NJUSFDGOWWKXXQTDCH5TEO6VPM
-   ```
-4. **Start Development Server**: `npm run dev`
+## 🖼️ Screenshots
 
-## 📊 User Feedback & Onboarding
-We actively collect feedback to improve the dApp.
-- **Feedback Form**: [Google Form Link](#) *(Update with your form link)*
-- **Exported Excel Data**: [Download Feedback Responses (Dummy Link)](#)
+> *Connect your Freighter wallet on the Stellar Testnet to explore the full experience.*
 
-### Improvement Tracking
-Based on feedback from our initial 5 testnet users, we implemented the following improvements:
-- **Improvement 1:** Fixed Freighter API v6 compatibility issue causing "e.switch is not a function". ([Commit Placeholder](#))
-- **Improvement 2:** Added Gasless Tipping to lower the barrier to entry for new users without XLM. ([Commit Placeholder](#))
+---
 
-## License
-MIT License
+## 🏗️ Architecture
+
+```
+src/
+├── components/
+│   ├── LandingPage.tsx      # Hero / wallet connect screen
+│   ├── Dashboard.tsx        # Balance card + account overview
+│   ├── TipForm.tsx          # Send XLM form with federation resolution
+│   ├── HistoryList.tsx      # Real-time streaming transaction history
+│   ├── TransactionModal.tsx # Processing / success / error overlay
+│   ├── ReceiveModal.tsx     # QR code receive modal
+│   └── FeedbackModal.tsx    # Community feedback collector
+├── utils/
+│   ├── stellar.ts           # Horizon SDK: balance, payments, Fee Bump
+│   ├── freighter.ts         # Freighter API: connect, sign, address helpers
+│   └── federation.ts        # Stellar federation address resolver
+├── App.tsx                  # Root: state, routing, wallet orchestration
+├── main.tsx                 # React 19 entry point
+└── index.css                # Global styles + Tailwind config
+```
+
+### Key Technical Decisions
+
+- **Fee Bump Transactions** — The `applyFeeBumpAndSubmit` utility wraps every inner transaction in a fee-bump envelope signed by a sponsor key, making tips genuinely gasless for end users. In production, this signing step should be delegated to a secure backend.
+- **Horizon Streaming** — `streamPayments()` opens a persistent SSE connection to Horizon so balances and history update in real-time without polling.
+- **Federation Resolution** — `federation.ts` resolves `name*domain` aliases through Stellar's federation protocol before building a payment transaction.
+- **Freighter v6 Compatibility** — The freighter utilities normalize both the legacy boolean and the new `{ isConnected }` object response shapes from the `@stellar/freighter-api` SDK.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+| Requirement | Version |
+|---|---|
+| Node.js | ≥ 18 |
+| npm | ≥ 9 |
+| [Freighter Wallet](https://www.freighter.app/) | Latest (browser extension) |
+
+> **Important:** Switch Freighter to **Testnet** mode before connecting.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Aniket24-create/Stellar_TipJar.git
+cd Stellar_TipJar
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file at the project root:
+
+```env
+# Optional — enables gasless sponsorship of transaction fees.
+# WARNING: Never expose a funded secret key in a frontend build for production use.
+# Move this to a secure backend before going live.
+VITE_SPONSOR_SECRET_KEY=S...your_testnet_sponsor_secret...
+```
+
+> If `VITE_SPONSOR_SECRET_KEY` is omitted, transactions are submitted directly (users pay the standard Stellar base fee).
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) and connect Freighter on Testnet.
+
+---
+
+## 🧑‍💻 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start Vite dev server with HMR |
+| `npm run build` | Type-check + production bundle |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across the project |
+| `npx vitest` | Run unit tests |
+
+---
+
+## 🧪 Testing
+
+Tests are co-located in `src/` and use **Vitest** + **React Testing Library** + **jsdom**.
+
+```bash
+# Run all tests once
+npx vitest run
+
+# Watch mode
+npx vitest
+```
+
+---
+
+## 🔗 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Framework** | React 19 + TypeScript 6 |
+| **Build Tool** | Vite 8 + vite-plugin-node-polyfills |
+| **Styling** | Tailwind CSS 3 + custom glassmorphism tokens |
+| **Animation** | Framer Motion 12 |
+| **Blockchain** | Stellar Testnet (Horizon API) |
+| **Wallet** | Freighter (`@stellar/freighter-api` v6) |
+| **Stellar SDK** | `@stellar/stellar-sdk` v15 |
+| **QR Code** | `react-qr-code` |
+| **Icons** | Lucide React |
+| **Testing** | Vitest + React Testing Library + jsdom |
+| **Linting** | ESLint 10 + typescript-eslint |
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Secure backend relayer for Fee Bump signing
+- [ ] Multi-asset tip support (USDC, custom tokens)
+- [ ] Soroban smart contract escrow for conditional tips
+- [ ] Tip leaderboard & social profiles
+- [ ] Mobile app (React Native)
+- [ ] Mainnet deployment
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'feat: add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+---
+
+## ⚠️ Security Notice
+
+This project is a **Testnet demo**. The `VITE_SPONSOR_SECRET_KEY` is exposed to the browser bundle for demonstration purposes only. **Never use a funded Mainnet key** in a client-side environment. In production, move all secret key operations to a secure, server-side relayer.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+
+Built with ❤️ on the Stellar Network &nbsp;•&nbsp; [Stellar Developer Docs](https://developers.stellar.org) &nbsp;•&nbsp; [Freighter Docs](https://docs.freighter.app)
+
+</div>
