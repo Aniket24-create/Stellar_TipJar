@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-500;
+  }
+  
+  body.dark {
+    @apply bg-[#0a0a0a] text-white;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(0, 112, 243, 0.08), transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(121, 40, 202, 0.08), transparent 40%);
+  }
+
+  body.light {
+    @apply bg-[#f8fafc] text-gray-900;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(0, 112, 243, 0.03), transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(121, 40, 202, 0.03), transparent 40%);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-xl border shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-all duration-300;
+  }
+  
+  .dark .glass-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .light .glass-card {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  }
+  
+  .glass-input {
+    @apply border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 transition-all duration-300 w-full font-medium;
+  }
+  
+  .dark .glass-input {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  
+  .dark .glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark .glass-input:focus {
+    border-color: #0070f3;
+    --tw-ring-color: rgba(0, 112, 243, 0.3);
+  }
+
+  .light .glass-input {
+    background-color: #ffffff;
+    border-color: #e5e7eb;
+    color: #111827;
+  }
+  
+  .light .glass-input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .light .glass-input:focus {
+    border-color: #0070f3;
+    --tw-ring-color: rgba(0, 112, 243, 0.3);
+  }
+  
+  .neon-button {
+    @apply relative overflow-hidden font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg;
+    background: linear-gradient(135deg, #0070f3, #7928ca);
+    color: white;
+  }
+  
+  .neon-button::before {
+    content: '';
+    @apply absolute inset-0 bg-white opacity-0 transition-opacity duration-300;
+  }
+  
+  .neon-button:hover::before {
+    @apply opacity-20;
+  }
+
+  .dark .neon-button:hover {
+    box-shadow: 0 0 20px rgba(0, 112, 243, 0.4), 0 0 40px rgba(121, 40, 202, 0.2);
+  }
+  
+  .light .neon-button:hover {
+    box-shadow: 0 10px 25px rgba(0, 112, 243, 0.3);
+  }
+  
+  .quick-tip-btn {
+    @apply py-2 px-4 rounded-lg font-medium transition-all duration-300 border;
+  }
+  
+  .dark .quick-tip-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark .quick-tip-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 112, 243, 0.5);
+  }
+  
+  .light .quick-tip-btn {
+    background-color: #ffffff;
+    border-color: #e5e7eb;
+    color: #374151;
+  }
+  
+  .light .quick-tip-btn:hover {
+    border-color: #0070f3;
+  }
+  
+  .quick-tip-btn.active {
+    border-color: #0070f3 !important;
+    color: #0070f3 !important;
+    background-color: rgba(0, 112, 243, 0.1) !important;
+  }
+}
