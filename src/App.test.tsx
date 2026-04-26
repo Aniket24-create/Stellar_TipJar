@@ -2,7 +2,6 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 import * as freighter from './utils/freighter';
-import * as stellar from './utils/stellar';
 
 // Mock the utility functions
 vi.mock('./utils/freighter', () => ({

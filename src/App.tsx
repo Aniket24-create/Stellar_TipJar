@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquareHeart, Moon, Sun, Github } from 'lucide-react';
+import { MessageSquareHeart, Moon, Sun } from 'lucide-react';
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
 import TipForm from './components/TipForm';
 import TransactionModal from './components/TransactionModal';
-import HistoryList, { Transaction } from './components/HistoryList';
+import HistoryList, { type Transaction } from './components/HistoryList';
 import ReceiveModal from './components/ReceiveModal';
 import FeedbackModal from './components/FeedbackModal';
 import { connectWallet, checkConnection, signStellarTransaction } from './utils/freighter';
@@ -172,8 +172,8 @@ function App() {
               <span className="hidden sm:inline">Give Feedback</span>
             </button>
           ) : (
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors dark:text-white text-gray-600">
-              <Github size={20} />
+            <a href="https://github.com/Aniket24-create/StarSend-X" target="_blank" rel="noopener noreferrer" className="text-sm font-medium px-4 py-2 rounded-full border border-gray-200 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/10 transition-colors dark:text-white text-gray-600">
+              GitHub
             </a>
           )}
         </div>
