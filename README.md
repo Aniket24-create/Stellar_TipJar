@@ -5,6 +5,7 @@
 <img src="https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 <img src="https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
 <img src="https://img.shields.io/badge/Freighter-Wallet-0096C7?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 
 <br /><br />
 
@@ -15,7 +16,7 @@ Send XLM tips to any Stellar address or federation alias — instantly, with zer
 
 <br />
 
-[🚀 Live Demo](#) &nbsp;•&nbsp; [📖 Docs](#architecture) &nbsp;•&nbsp; [🐛 Report Bug](https://github.com/Aniket24-create/Stellar_TipJar/issues) &nbsp;•&nbsp; [✨ Request Feature](https://github.com/Aniket24-create/Stellar_TipJar/issues)
+[🚀 Live Demo](https://level4-pearl.vercel.app) &nbsp;•&nbsp; [📖 Docs](#architecture) &nbsp;•&nbsp; [🐛 Report Bug](https://github.com/Aniket24-create/Stellar_TipJar/issues) &nbsp;•&nbsp; [✨ Request Feature](https://github.com/Aniket24-create/Stellar_TipJar/issues)
 
 </div>
 
