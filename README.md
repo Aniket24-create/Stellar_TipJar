@@ -9,11 +9,11 @@ A premium, production-ready decentralized application built on the Stellar Testn
 ## 📱 Screenshots
 
 ### Mobile Responsive View
-*(Insert your mobile screen recording/screenshot here)*
-![Mobile View Placeholder](https://via.placeholder.com/400x800?text=Mobile+Responsive+View)
+*(Record a short screen video on mobile or use Chrome DevTools device emulation and take screenshot)*
+![Mobile View](./src/assets/dashboard_screenshot.png)
 
 ### Dashboard & Send Tip
-![Dashboard UI](https://via.placeholder.com/800x400?text=Dashboard+and+Send+Tip)
+![Dashboard UI](./src/assets/dashboard_screenshot.png)
 
 ## ⚙️ CI/CD Pipeline
 We use GitHub Actions for automated testing and builds.
