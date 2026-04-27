@@ -39,6 +39,22 @@ Send XLM tips to any Stellar address or federation alias — instantly, with zer
 
 ---
 
+## 🖼️ Demo Preview
+
+<div align="center">
+
+<a href="https://drive.google.com/file/d/1QfZcQj_xUPYD0N2vstZKYXmnQ7TWK3it/view" target="_blank">
+  <img src="https://drive.google.com/uc?export=view&id=1QfZcQj_xUPYD0N2vstZKYXmnQ7TWK3it" width="800px" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+</a>
+
+<br/>
+
+<em>**Click the image to view the full demo on Google Drive**</em>
+
+</div>
+
+---
+
 ## 🖼️ Visual Walkthrough
 
 <div align="center">
