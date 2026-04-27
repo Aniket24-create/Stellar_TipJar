@@ -39,27 +39,56 @@ Send XLM tips to any Stellar address or federation alias — instantly, with zer
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Visual Walkthrough
+
+<table border="0">
+  <tr>
+    <td align="center">
+      <img src="screenshots/ui%20image%20.png" width="100%" alt="Hero Interface"/><br/>
+      <b>✨ Premium Dashboard</b>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<table border="0">
+  <tr>
+    <td width="50%" align="center">
+      <img src="screenshots/wallet%20connect%20.png" width="100%" alt="Wallet Connect"/><br/>
+      <b>🔑 Connect Wallet</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="screenshots/wallect%20conformaction%20.png" width="100%" alt="Wallet Confirmation"/><br/>
+      <b>✅ Account Verified</b>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="screenshots/sen%20payment%20.png" width="100%" alt="Send Payment UI"/><br/>
+      <b>💸 Prepare Tip</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="screenshots/send%20payment.png" width="100%" alt="Sending Payment"/><br/>
+      <b>🚀 Processing...</b>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<table border="0">
+  <tr>
+    <td align="center">
+      <img src="screenshots/payment%20conformaction%20.png" width="100%" alt="Payment Confirmation"/><br/>
+      <b>🎉 Success! Payment Confirmed</b>
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 <div align="center">
-  <h3>Hero Interface</h3>
-  <img src="screenshots/ui%20image%20.png" alt="StarSend UI" width="800px" />
-  <br />
-
-  <h3>Wallet Connection</h3>
-  <img src="screenshots/wallet%20connect%20.png" alt="Wallet Connect" width="400px" />
-  <img src="screenshots/wallect%20conformaction%20.png" alt="Wallet Confirmation" width="400px" />
-  <br />
-
-  <h3>Sending Payments</h3>
-  <img src="screenshots/sen%20payment%20.png" alt="Send Payment UI" width="400px" />
-  <img src="screenshots/send%20payment.png" alt="Sending Payment" width="400px" />
-  <br />
-
-  <h3>Transaction Confirmation</h3>
-  <img src="screenshots/payment%20conformaction%20.png" alt="Payment Confirmation" width="800px" />
-  <br /><br />
-  
   <a href="https://level4-pearl.vercel.app">🚀 Explore the Live Demo</a>
 </div>
 
