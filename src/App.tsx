@@ -9,7 +9,7 @@ import HistoryList, { type Transaction } from './components/HistoryList';
 import ReceiveModal from './components/ReceiveModal';
 import FeedbackModal from './components/FeedbackModal';
 import { connectWallet, checkConnection, signStellarTransaction } from './utils/freighter';
-import { fetchBalance, createPaymentTransaction, submitTransaction, streamPayments } from './utils/stellar';
+import { fetchBalance, createPaymentTransaction, submitTransaction, streamPayments, fetchTransactionHistory } from './utils/stellar';
 
 function App() {
   const [publicKey, setPublicKey] = useState<string | null>(null);

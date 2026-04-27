@@ -34,6 +34,7 @@ A Rust-based smart contract for the TipJar application built on Stellar's Soroba
 ## Data Structures
 
 ### Tip
+
 ```rust
 pub struct Tip {
     pub id: u64,
@@ -47,6 +48,7 @@ pub struct Tip {
 ```
 
 ### TipStats
+
 ```rust
 pub struct TipStats {
     pub total_tips: u64,
@@ -66,11 +68,13 @@ pub struct TipStats {
 ### Setup
 
 1. Install Soroban CLI:
+
 ```bash
 cargo install --locked soroban-cli
 ```
 
-2. Configure Stellar testnet:
+1. Configure Stellar testnet:
+
 ```bash
 soroban network add testnet \
   --global \
@@ -78,7 +82,8 @@ soroban network add testnet \
   --network-passphrase "Test SDF Network ; September 2015"
 ```
 
-3. Create a test identity:
+1. Create a test identity:
+
 ```bash
 soroban keys generate --global default
 soroban keys fund default --network testnet

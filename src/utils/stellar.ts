@@ -94,12 +94,28 @@ export const submitTransaction = async (signedXDR: string): Promise<any> => {
   return applyFeeBumpAndSubmit(signedXDR);
 };
 
+export const fetchTransactionHistory = async (publicKey: string): Promise<any[]> => {
+  try {
+    const payments = await server
+      .payments()
+      .forAccount(publicKey)
+      .order('desc')
+      .limit(50)
+      .call();
+    
+    return payments.records;
+  } catch (error) {
+    console.error("Error fetching transaction history:", error);
+    return [];
+  }
+};
+
 export const streamPayments = (
   publicKey: string,
   onMessage: (message: any) => void,
   onError: (error: any) => void
 ) => {
-  return server
+  const closeStream = server
     .payments()
     .forAccount(publicKey)
     .cursor("now")
@@ -107,4 +123,6 @@ export const streamPayments = (
       onmessage: onMessage,
       onerror: onError,
     });
+  
+  return closeStream;
 };
