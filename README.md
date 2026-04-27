@@ -42,9 +42,9 @@ Send XLM tips to any Stellar address or federation alias — instantly, with zer
 ## 🖼️ Screenshots
 
 <div align="center">
-  <img src="src/assets/hero.png" alt="TipJar Hero" width="800px" />
+  <img src="screenshots/hero.png" alt="StarSend Hero" width="800px" />
   <br />
-  <img src="src/assets/dashboard_screenshot.png" alt="TipJar Dashboard" width="800px" />
+  <img src="screenshots/dashboard_screenshot.png" alt="StarSend Dashboard" width="800px" />
   <br />
   <em>The premium glassmorphism dashboard featuring real-time XLM balance and streaming transaction history.</em>
   <br /><br />
