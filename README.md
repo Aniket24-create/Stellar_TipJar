@@ -41,54 +41,43 @@ Send XLM tips to any Stellar address or federation alias — instantly, with zer
 
 ## 🖼️ Visual Walkthrough
 
-<table border="0">
-  <tr>
-    <td align="center">
-      <img src="screenshots/ui%20image%20.png" width="100%" alt="Hero Interface"/><br/>
-      <b>✨ Premium Dashboard</b>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<table border="0">
-  <tr>
-    <td width="50%" align="center">
-      <img src="screenshots/wallet%20connect%20.png" width="100%" alt="Wallet Connect"/><br/>
-      <b>🔑 Connect Wallet</b>
-    </td>
-    <td width="50%" align="center">
-      <img src="screenshots/wallect%20conformaction%20.png" width="100%" alt="Wallet Confirmation"/><br/>
-      <b>✅ Account Verified</b>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <img src="screenshots/sen%20payment%20.png" width="100%" alt="Send Payment UI"/><br/>
-      <b>💸 Prepare Tip</b>
-    </td>
-    <td width="50%" align="center">
-      <img src="screenshots/send%20payment.png" width="100%" alt="Sending Payment"/><br/>
-      <b>🚀 Processing...</b>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<table border="0">
-  <tr>
-    <td align="center">
-      <img src="screenshots/payment%20conformaction%20.png" width="100%" alt="Payment Confirmation"/><br/>
-      <b>🎉 Success! Payment Confirmed</b>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
 <div align="center">
+  <h3>✨ Premium Dashboard</h3>
+  <img src="screenshots/ui%20image%20.png" width="800px" alt="Hero Interface"/>
+  
+  <br/><br/>
+
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <div style="flex: 1; text-align: center;">
+      <img src="screenshots/wallet%20connect%20.png" width="390px" alt="Wallet Connect"/><br/>
+      <b>🔑 Connect Wallet</b>
+    </div>
+    <div style="flex: 1; text-align: center;">
+      <img src="screenshots/wallect%20conformaction%20.png" width="390px" alt="Wallet Confirmation"/><br/>
+      <b>✅ Account Verified</b>
+    </div>
+  </div>
+
+  <br/><br/>
+
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <div style="flex: 1; text-align: center;">
+      <img src="screenshots/sen%20payment%20.png" width="390px" alt="Send Payment UI"/><br/>
+      <b>💸 Prepare Tip</b>
+    </div>
+    <div style="flex: 1; text-align: center;">
+      <img src="screenshots/send%20payment.png" width="390px" alt="Sending Payment"/><br/>
+      <b>🚀 Processing...</b>
+    </div>
+  </div>
+
+  <br/><br/>
+
+  <h3>🎉 Success! Payment Confirmed</h3>
+  <img src="screenshots/payment%20conformaction%20.png" width="800px" alt="Payment Confirmation"/>
+
+  <br/><br/>
+  
   <a href="https://level4-pearl.vercel.app">🚀 Explore the Live Demo</a>
 </div>
 
