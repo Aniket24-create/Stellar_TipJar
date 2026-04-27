@@ -9,14 +9,14 @@
 
 <br /><br />
 
-<h1>🪙 StarSend (StellarRiseIn)</h1>
+<h1>🪙 Stellar TipJar</h1>
 
 <p><strong>A premium, gasless micro-tipping dApp built on the Stellar Testnet.</strong><br/>
 Send XLM tips to any Stellar address or federation alias — instantly, with zero transaction fees for senders.</p>
 
 <br />
 
-[🚀 Live Demo](https://level4-pearl.vercel.app) &nbsp;•&nbsp; [📖 Docs](#architecture) &nbsp;•&nbsp; [🐛 Report Bug](https://github.com/Aniket24-create/StellarRiseIn_StarSend/issues) &nbsp;•&nbsp; [✨ Request Feature](https://github.com/Aniket24-create/StellarRiseIn_StarSend/issues)
+[🚀 Live Demo](https://level4-pearl.vercel.app) &nbsp;•&nbsp; [📖 Docs](#architecture) &nbsp;•&nbsp; [🐛 Report Bug](https://github.com/Aniket24-create/Stellar_TipJar/issues) &nbsp;•&nbsp; [✨ Request Feature](https://github.com/Aniket24-create/Stellar_TipJar/issues)
 
 </div>
 
@@ -139,8 +139,8 @@ src/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Aniket24-create/StellarRiseIn_StarSend.git
-cd StellarRiseIn_StarSend
+git clone https://github.com/Aniket24-create/Stellar_TipJar.git
+cd Stellar_TipJar
 ```
 
 ### 2. Install dependencies
