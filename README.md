@@ -41,7 +41,15 @@ Send XLM tips to any Stellar address or federation alias — instantly, with zer
 
 ## 🖼️ Screenshots
 
-> *Connect your Freighter wallet on the Stellar Testnet to explore the full experience.*
+<div align="center">
+  <img src="src/assets/hero.png" alt="TipJar Hero" width="800px" />
+  <br />
+  <img src="src/assets/dashboard_screenshot.png" alt="TipJar Dashboard" width="800px" />
+  <br />
+  <em>The premium glassmorphism dashboard featuring real-time XLM balance and streaming transaction history.</em>
+  <br /><br />
+  <a href="https://level4-pearl.vercel.app">🚀 Explore the Live Demo</a>
+</div>
 
 ---
 
