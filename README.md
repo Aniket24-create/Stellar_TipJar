@@ -42,12 +42,24 @@ Send XLM tips to any Stellar address or federation alias — instantly, with zer
 ## 🖼️ Screenshots
 
 <div align="center">
-  <img src="screenshots/hero.png" alt="StarSend Hero" width="800px" />
+  <h3>Hero Interface</h3>
+  <img src="screenshots/ui%20image%20.png" alt="StarSend UI" width="800px" />
   <br />
-  <img src="screenshots/dashboard_screenshot.png" alt="StarSend Dashboard" width="800px" />
+
+  <h3>Wallet Connection</h3>
+  <img src="screenshots/wallet%20connect%20.png" alt="Wallet Connect" width="400px" />
+  <img src="screenshots/wallect%20conformaction%20.png" alt="Wallet Confirmation" width="400px" />
   <br />
-  <em>The premium glassmorphism dashboard featuring real-time XLM balance and streaming transaction history.</em>
+
+  <h3>Sending Payments</h3>
+  <img src="screenshots/sen%20payment%20.png" alt="Send Payment UI" width="400px" />
+  <img src="screenshots/send%20payment.png" alt="Sending Payment" width="400px" />
+  <br />
+
+  <h3>Transaction Confirmation</h3>
+  <img src="screenshots/payment%20conformaction%20.png" alt="Payment Confirmation" width="800px" />
   <br /><br />
+  
   <a href="https://level4-pearl.vercel.app">🚀 Explore the Live Demo</a>
 </div>
 
