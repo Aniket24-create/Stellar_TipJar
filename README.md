@@ -187,7 +187,9 @@ npx vitest
 
 ## 🦀 Smart Contract
 
-The project includes a Soroban smart contract written in Rust that provides:
+The project includes a Soroban smart contract written in Rust. You can find the full source code in [contracts/src/lib.rs](./contracts/src/lib.rs).
+
+The contract provides:
 
 - **Tip Escrow**: Secure tip storage until claimed
 - **Batch Operations**: Claim multiple tips in one transaction

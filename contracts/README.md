@@ -2,6 +2,8 @@
 
 A Rust-based smart contract for the TipJar application built on Stellar's Soroban platform.
 
+**Source Code:** [src/lib.rs](./src/lib.rs)
+
 ## Features
 
 - **Send Tips**: Users can send tips with messages to other users
