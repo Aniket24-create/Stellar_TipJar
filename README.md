@@ -11,6 +11,10 @@
 
 <h1>🪙 Stellar TipJar</h1>
 
+<p align="center">
+  <img src="https://github.com/Aniket24-create/Stellar_TipJar/actions/workflows/ci-cd.yml/badge.svg" alt="Production CI/CD Pipeline" />
+</p>
+
 <p><strong>A premium, gasless micro-tipping dApp built on the Stellar Testnet.</strong><br/>
 Send XLM tips to any Stellar address or federation alias — instantly, with zero transaction fees for senders.</p>
 
@@ -200,6 +204,19 @@ npx vitest run
 # Watch mode
 npx vitest
 ```
+
+---
+
+## ⚙️ CI/CD Pipeline
+
+The project uses a production-ready **GitHub Actions** pipeline with the following workflow:
+
+- **🛡️ Security Audit**: Runs `npm audit` to check for high-level vulnerabilities.
+- **⬢ Linting**: Ensures code quality using `ESLint`.
+- **🧪 Unit Tests**: Executes frontend tests via `Vitest`.
+- **🦀 Smart Contract Tests**: Validates the Soroban contract logic using `cargo test`.
+- **🏗️ Production Build**: Compiles the Next.js application (depends on all previous jobs).
+- **🚀 Deployment**: Automatically deploys to **Vercel** on successful main branch pushes.
 
 ---
 
