@@ -211,6 +211,8 @@ npx vitest
 
 The project uses a production-ready **GitHub Actions** pipeline with the following workflow:
 
+All steps are implemented as **separate GitHub Actions jobs**, ensuring a multi-stage CI pipeline. The build job depends on all validation jobs, and deployment (CD) runs only after a successful build.
+
 - **🛡️ Security Audit**: Runs `npm audit` to check for high-level vulnerabilities.
 - **⬢ Linting**: Ensures code quality using `ESLint`.
 - **🧪 Unit Tests**: Executes frontend tests via `Vitest`.
